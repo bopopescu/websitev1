@@ -36,6 +36,7 @@
     <Compile Include="programming\migrations\__init__.py" />
     <Compile Include="programming\models.py" />
     <Compile Include="programming\tests.py" />
+    <Compile Include="programming\urls.py" />
     <Compile Include="programming\views.py" />
     <Compile Include="programming\__init__.py" />
     <Compile Include="websitev1\__init__.py" />
