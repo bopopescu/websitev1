@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'programming',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -78,8 +79,14 @@ WSGI_APPLICATION = 'websitev1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'program', # here you need to put database name 
+        'USER': 'testuser', # user name 
+        'PASSWORD': 'password',
+        'HOST': '192.168.2.111', # the host of the database 
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        }
     }
 }
 
